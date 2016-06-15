@@ -9,8 +9,12 @@ import Tablas.Encargado;
 import Tablas.Venta;
 import java.sql.Connection;
 import java.sql.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -171,6 +175,7 @@ public Connection co;
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    try {
         // TODO add your handling code here:
         //hacer un arreglo de las ventas que esten en los rangos, luego, ir a los detalles a ver cuáles fueron esas ventas y sacar
         //solo las que sean de bebidas(osea comidaid==null) sumarlas y dividirlas entre dos
@@ -181,15 +186,21 @@ public Connection co;
         DefaultTableModel dt=(DefaultTableModel) jTable1.getModel();
         dt.setRowCount(0);
         for (int i=0;i<encargados.size();i++){
-            dt.addRow(new Object[]{
-                encargados.get(i).getNombre(),encargados.get(i).getCargo(),encargados.get(i).getPassword()
-            });
-            System.out.println(encargados.get(i).getNombre());
+        dt.addRow(new Object[]{
+        encargados.get(i).getNombre(),encargados.get(i).getCargo(),encargados.get(i).getPassword()
+        });
+        System.out.println(encargados.get(i).getNombre());
         */
         Date fecha1 =null;
+        Date fecha2 =null;
         Venta venta=new Venta();
         ventas=new ArrayList<>();
-        
+        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+        fecha1=(Date) df.parse(jTextField1.getText());
+        fecha2=(Date) df.parse(jTextField2.getText());
+    } catch (ParseException ex) {
+        Logger.getLogger(RecursosHumanos.class.getName()).log(Level.SEVERE, null, ex);
+    }
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
