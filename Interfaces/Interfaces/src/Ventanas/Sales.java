@@ -111,7 +111,9 @@ public Connection co;
         });
         getContentPane().add(jButtonExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 10, -1, -1));
 
+        jTable1.setBackground(new java.awt.Color(0, 0, 0));
         jTable1.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        jTable1.setForeground(new java.awt.Color(255, 255, 255));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -130,8 +132,10 @@ public Connection co;
         });
         jScrollPane5.setViewportView(jTable1);
 
-        getContentPane().add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 300, 170));
+        getContentPane().add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 300, 170));
 
+        jTable2.setBackground(new java.awt.Color(0, 0, 0));
+        jTable2.setForeground(new java.awt.Color(255, 255, 255));
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -152,6 +156,8 @@ public Connection co;
 
         getContentPane().add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 100, 300, 170));
 
+        jTable3.setBackground(new java.awt.Color(0, 0, 0));
+        jTable3.setForeground(new java.awt.Color(255, 255, 255));
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -174,6 +180,8 @@ public Connection co;
 
         jScrollPane8.setBackground(new java.awt.Color(255, 153, 51));
 
+        jTable4.setBackground(new java.awt.Color(0, 0, 0));
+        jTable4.setForeground(new java.awt.Color(255, 255, 255));
         jTable4.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -260,6 +268,8 @@ public Connection co;
 
         jScrollPane10.setBackground(new java.awt.Color(255, 153, 51));
 
+        jTable6.setBackground(new java.awt.Color(0, 0, 0));
+        jTable6.setForeground(new java.awt.Color(255, 255, 255));
         jTable6.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -290,7 +300,7 @@ public Connection co;
         });
         jScrollPane10.setViewportView(jTable6);
 
-        getContentPane().add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 390, 420, 170));
+        getContentPane().add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 390, 420, 160));
 
         jButton9.setBackground(new java.awt.Color(102, 0, 0));
         jButton9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
