@@ -17,6 +17,8 @@ import javax.swing.table.DefaultTableModel;
  * 
  * Que putas soy pozjgkikjhtikyh
  * 
+ * MESSI METIO NO METIO GOL AYER
+ * 
  */
 public class Sales extends javax.swing.JFrame {
 ConexionSQLbase c=new ConexionSQLbase();
