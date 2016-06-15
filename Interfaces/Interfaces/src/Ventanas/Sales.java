@@ -15,6 +15,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Vetto
  * 
+ * Que putas soy poz
  * 
  */
 public class Sales extends javax.swing.JFrame {
