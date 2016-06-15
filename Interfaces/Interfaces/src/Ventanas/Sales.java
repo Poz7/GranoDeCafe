@@ -14,6 +14,8 @@ import javax.swing.table.DefaultTableModel;
 /**
  *
  * @author Vetto
+ * 
+ * 
  */
 public class Sales extends javax.swing.JFrame {
 ConexionSQLbase c=new ConexionSQLbase();
